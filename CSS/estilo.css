@@ -1,0 +1,87 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+
+body {
+    background: url('../Imagens/background.jpg');
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#page {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100vh;
+}
+
+header {
+    width: 90%;
+    background-color: rgba(197, 98, 16,0.6);
+    height: 100px;
+    margin: auto;
+    padding: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo img {
+    height: 100px;
+}
+
+/* MENU */
+
+#menu nav ul {
+    display: flex; 
+    /* display na il pra ficarem os itens um ao lado do outro */
+    gap: 30px;
+    /* pode-se usar tb margin:10px por exemplo */ 
+}
+
+#menu nav ul li {
+    list-style: none;
+}
+
+#menu nav ul li a {
+    color: antiquewhite;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: background 250ms, color 500ms, border 250ms;
+    /* text-transform: uppercase; */
+    padding: 7px 10px;
+    border-radius: 10px 0px 10px 0px;
+
+}
+
+#menu nav ul li a:hover {
+    background-color: rgb(92, 146, 10);
+    color: antiquewhite;
+    font-size: 1.2em;
+    border-bottom: 2px solid brown(137, 5, 5);
+}
+
+#menu nav ul li a.ativo {
+    background-color: rgb(92, 146, 10);
+    color: antiquewhite;
+}
+
+@keyframes animacaocimabaixo {
+    from {bottom: 20px;}
+    to {bottom: 50px}
+}
+
+#whatsapp img {
+    height: 50px;
+}
+
+#whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 60px;
+    animation: animacaocimabaixo 1s infinite;
+}
+
+
+
